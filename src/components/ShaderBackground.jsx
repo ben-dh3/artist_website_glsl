@@ -2,6 +2,7 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useMemo, useRef, useCallback, useEffect } from "react";
 import { Vector2, Color } from "three";
+import { useAspect } from "@react-three/drei";
 
 import vertexShader from "../assets/shaders/vertexShader.glsl";
 import fragmentShader from "../assets/shaders/fragmentShader.glsl";
@@ -21,9 +22,9 @@ const Fragment = () => {
         value: 0.0,
       },
       u_mouse: { value: new Vector2(0, 0) },
-      u_colorA: { value: new Color("#7ED320") },
+      u_colorA: { value: new Color("#24FF00") },
       u_colorB: { value: new Color("#D0011B") },
-      u_colorC: { value: new Color("#4990E2") },
+      u_colorC: { value: new Color("#0029FF") },
     }), []
   );
 
@@ -44,8 +45,10 @@ const Fragment = () => {
     );
   });
 
+  const size = useAspect(1800, 1000)
+
   return (
-    <mesh ref={mesh} position={[0, 0, 0]} scale={1.0}>
+    <mesh ref={mesh} position={[0, 0, 0]} scale={size}>
       <planeGeometry args={[1, 1, 32, 32]} />
       <shaderMaterial
         fragmentShader={fragmentShader}

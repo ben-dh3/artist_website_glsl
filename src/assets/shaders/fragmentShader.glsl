@@ -66,7 +66,7 @@ float fbm(vec2 st)
 
 void main()
 {
-    vec2 st = (vUv * 0.5);
+    vec2 st = (vUv * 0.8);
     
     vec3 color = vec3(0.0);
         
@@ -75,10 +75,10 @@ void main()
     q.y = fbm(st + vec2(1.0) + (0.15 * u_time));
     
     vec2 r = vec2(0.0);
-    r.y = fbm(st + (4.0 * q) + vec2(8.3, 2.8) + (0.15 * u_time) * (sin(u_mouse.y * 0.001)));
+    r.y = fbm(st + (4.0 * q) + vec2(2.3, 2.8) + (0.15 * u_time) * (sin(u_mouse.y * 0.0005)));
     
     vec2 s = vec2(0.0);
-    s.x = fbm(st + (4.0 * q) + vec2(1.7, 9.2) + (0.15 * u_time) * (sin(u_mouse.x * 0.001)));
+    s.x = fbm(st + (4.0 * q) + vec2(1.7, 2.2) + (0.15 * u_time) * (sin(u_mouse.x * 0.0005)));
     
     color = mix(color, u_colorA, clamp(length(q), 0.0, 1.0));
     color = mix(color, u_colorB, clamp(length(r), 0.0, 1.0));
