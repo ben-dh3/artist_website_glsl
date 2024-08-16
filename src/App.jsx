@@ -1,27 +1,33 @@
-import Gallery from './components/Gallery';
-import ShaderBackground from './components/ShaderBackground';
-import Title from '/title.png';
-function App() {
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from "./pages/home";
+import Contact from "./pages/contact";
+import OilAndWatercolourInteraction from "./pages/products/oilAndWatercolourInteraction";
+import WaxAndOilInteraction from "./pages/products/waxAndOilInteraction";
 
-  return (
-    <div className='w-screen h-screen flex'>
-      <ShaderBackground />
-      <div className='absolute self-center bg-white w-full h-1/2'>
-        <div className='flex flex-row justify-evenly'>
-          <div className="flex-1 flex justify-center items-center">
-            <img src={Title} alt="Art By Ben" />
-          </div>
-          <div className="flex-1 mx-auto">
-            <Gallery /> 
-          </div>
-          <div className="flex-1">
-            <div>CONTACT</div>
-          </div> 
-        </div>
-        
-      </div>
-    </div>
-  )
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />
+  },
+  {
+    path: '/contact',
+    element: <Contact />
+  },
+  {
+    path: '/product1',
+    element: <OilAndWatercolourInteraction />
+  },
+  {
+    path: '/product2',
+    element: <WaxAndOilInteraction />
+  },
+]);
+
+function App() {
+  return <RouterProvider router={router} />
 }
 
 export default App
