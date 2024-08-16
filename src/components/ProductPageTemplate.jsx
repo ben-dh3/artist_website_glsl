@@ -27,7 +27,7 @@ export default function ProductPageTemplate({ productId, productComponentId }) {
   }, []);
 
   return (
-    <div className="w-screen h-screen flex justify-center ">
+    <div className="w-screen h-screen flex justify-center">
     <ShaderBackground />
         <div className="flex overflow-scroll xl:overflow-hidden absolute bg-white p-4 sm:w-1/2 h-full">
         <Link to="/" className="absolute top-2 right-2">

@@ -30,7 +30,7 @@ const Carousel = ({ images }) => {
                 <img
                 src={image.src}
                 alt={image.alt || `Slide ${index + 1}`}
-                className="w-1/2 h-auto object-cover"
+                className="xl:w-1/2 h-auto object-cover"
                 />
             </Link>
         ))}

@@ -9,8 +9,8 @@ function Home() {
   return (
     <div className='w-screen h-screen flex'>
       <ShaderBackground />
-      <div className='absolute self-center bg-white w-full'>
-        <div className='flex flex-row justify-evenly'>
+      <div className='sm:absolute self-center bg-white w-full'>
+        <div className='flex sm:flex-row flex-col justify-evenly'>
           <div className="flex-1 flex justify-center items-center">
             <img src={Title} alt="Art By Ben" />
           </div>
