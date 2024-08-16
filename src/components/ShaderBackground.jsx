@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useMemo, useRef, useCallback, useEffect } from "react";
+import { useMemo, useRef, useCallback, useEffect, useState } from "react";
 import { Vector2, Color } from "three";
 import { useAspect } from "@react-three/drei";
 
@@ -60,12 +60,26 @@ const Fragment = () => {
 };
 
 const ShaderBackground = () => {
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 640);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 640);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  if (!isDesktop) return null;
+
   return (
     <Canvas camera={{ position: [0.0, 0.0, 1.0] }}>
       <Fragment />
     </Canvas>
   );
 };
-
 
 export default ShaderBackground;
