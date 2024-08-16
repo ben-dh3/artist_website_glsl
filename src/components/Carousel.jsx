@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,7 +26,7 @@ const Carousel = ({ images }) => {
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((image, index) => (
-            <Link className="flex justify-center self-center w-full flex-shrink-0" key={index} to={image.link}>
+            <Link className="cursor-zoom-in flex justify-center self-center w-full flex-shrink-0" key={index} to={image.link}>
                 <img
                 src={image.src}
                 alt={image.alt || `Slide ${index + 1}`}
@@ -35,15 +37,15 @@ const Carousel = ({ images }) => {
       </div>
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-black/50 p-2 rounded-full"
+        className="text-6xl absolute top-1/2 left-4 transform -translate-y-1/2 text-colour"
       >
-        &#10094;
+        <FontAwesomeIcon icon={faArrowLeft} />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-black/50 p-2 rounded-full"
+        className="text-6xl absolute top-1/2 right-4 transform -translate-y-1/2 text-colour"
       >
-        &#10095;
+        <FontAwesomeIcon icon={faArrowRight} />
       </button>
     </div>
   );
