@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import Contact from "./pages/contact";
 import OilAndWatercolourInteraction from "./pages/products/oilAndWatercolourInteraction";
 import WaxAndOilInteraction from "./pages/products/waxAndOilInteraction";
+import WaxAndWatercolourInteraction from "./pages/products/waxAndWatercolourInteraction";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: '/product2',
     element: <WaxAndOilInteraction />
+  },
+  {
+    path: '/product3',
+    element: <WaxAndWatercolourInteraction />
   },
 ]);
 

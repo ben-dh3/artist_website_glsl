@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,12 +24,13 @@ const Carousel = ({ images }) => {
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((image, index) => (
-          <img
-            key={index}
-            src={image.src}
-            alt={image.alt || `Slide ${index + 1}`}
-            className="w-full h-auto object-cover"
-          />
+            <Link className="flex justify-center self-center w-full flex-shrink-0" key={index} to={image.link}>
+                <img
+                src={image.src}
+                alt={image.alt || `Slide ${index + 1}`}
+                className="w-1/2 h-auto object-cover"
+                />
+            </Link>
         ))}
       </div>
       <button

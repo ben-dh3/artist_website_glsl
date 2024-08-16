@@ -17,11 +17,14 @@ function Home() {
           <div className="flex-1">
             <Gallery /> 
           </div>
-          <div className="flex-1">
-            <Link to="/contact">CONTACT</Link>
-            <a href="https://www.instagram.com/__artbyben/" target='_blank' aria-label="Instagram Link">
-                <FontAwesomeIcon icon={faInstagram} className="text-2xl mx-2" />
-            </a>
+          <div className="flex-1 flex justify-end">
+            <div className="text-4xl self-center -rotate-90">
+                <a className="text-2xl" href="https://www.instagram.com/__artbyben/" target='_blank' aria-label="Instagram Link">
+                <FontAwesomeIcon icon={faInstagram} />
+                </a>
+                <Link to="/contact">CONTACT</Link>   
+            </div>
+            
           </div> 
         </div>
         
