@@ -30,20 +30,20 @@ const Carousel = ({ images }) => {
                 <img
                 src={image.src}
                 alt={image.alt || `Slide ${index + 1}`}
-                className="xl:w-1/2 h-auto object-cover"
+                className="h-96 w-auto object-cover"
                 />
             </Link>
         ))}
       </div>
       <button
         onClick={prevSlide}
-        className="text-6xl absolute top-1/2 left-4 transform -translate-y-1/2 text-colour"
+        className="text-4xl absolute top-1/2 left-4 transform -translate-y-1/2 text-colour"
       >
         <FontAwesomeIcon icon={faArrowLeft} />
       </button>
       <button
         onClick={nextSlide}
-        className="text-6xl absolute top-1/2 right-4 transform -translate-y-1/2 text-colour"
+        className="text-4xl absolute top-1/2 right-4 transform -translate-y-1/2 text-colour"
       >
         <FontAwesomeIcon icon={faArrowRight} />
       </button>

@@ -4,25 +4,28 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Gallery from '../components/Gallery';
 import ShaderBackground from '../components/ShaderBackground';
 import Title from '/title.png';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 function Home() {
 
   return (
-    <div className='w-screen h-screen flex'>
+    <div className='w-screen h-screen flex flex-row-reverse'>
       <ShaderBackground />
-      <div className='sm:absolute self-center bg-white w-full'>
-        <div className='flex sm:flex-row flex-col justify-evenly'>
-          <div className="flex-1 flex justify-center items-center">
-            <img src={Title} alt="Art By Ben" />
+      <div className='flex self-center bg-white h-full w-auto'>
+        <div className='flex flex-col items-center'>
+          <div className="flex-1 flex">
+            <img className="h-20 w-auto self-center" src={Title} alt="Art By Ben" />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 flex mx-10">
             <Gallery /> 
           </div>
-          <div className="flex-1 flex justify-end">
-            <div className="text-4xl self-center -rotate-90">
-                <a className="text-2xl" href="https://www.instagram.com/__artbyben/" target='_blank' aria-label="Instagram Link">
+          <div className="flex-1 flex">
+            <div className="text-2xl self-center space-x-5">
+                <a href="https://www.instagram.com/__artbyben/" target='_blank' aria-label="Instagram Link">
                 <FontAwesomeIcon icon={faInstagram} />
                 </a>
-                <Link to="/contact">CONTACT</Link>   
+                <Link to="/contact">
+                <FontAwesomeIcon icon={faEnvelope} />
+                </Link>   
             </div>
             
           </div> 

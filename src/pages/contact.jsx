@@ -7,10 +7,10 @@ import ShaderBackground from "../components/ShaderBackground";
 export default function Contact(){
 
     return(
-        <div className="w-screen h-screen flex justify-center">
+        <div className="w-screen h-screen flex flex-row-reverse justify-center">
             <ShaderBackground />
-            <div className="flex overflow-scroll xl:overflow-hidden absolute bg-white p-4 sm:w-1/2 h-full">
-                <Link className="absolute top-2 right-2" to="/">
+            <div className="flex overflow-scroll xl:overflow-hidden bg-white p-4 h-full">
+                <Link className="absolute top-2 left-2" to="/">
                     <FontAwesomeIcon icon={faTimes} size="lg" />
                 </Link>
                 <ContactForm />

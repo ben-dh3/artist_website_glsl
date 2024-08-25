@@ -27,14 +27,16 @@ export default function ProductPageTemplate({ productId, productComponentId }) {
   }, []);
 
   return (
-    <div className="w-screen h-screen flex justify-center">
-    <ShaderBackground />
-        <div className="flex overflow-scroll xl:overflow-hidden absolute bg-white p-4 sm:w-1/2 h-full">
-        <Link to="/" className="absolute top-2 right-2">
-            <FontAwesomeIcon icon={faTimes} size="lg" />
-        </Link>
-        <div id={productComponentId} className="m-10 w-full xl:self-center"></div>   
-        </div>
+    <div className="w-screen h-screen flex flex-row-reverse">
+      <ShaderBackground />
+      <div className="flex bg-white p-4 h-full w-full">
+      <Link to="/" className="absolute top-2 left-2">
+          <FontAwesomeIcon icon={faTimes} size="lg" />
+      </Link>
+      <div className='m-10 w-full h-full xl:self-center'>
+        <div id={productComponentId} className="mb-20"></div>   
+      </div>
+      </div>
     </div>
   );
 }
