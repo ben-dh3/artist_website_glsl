@@ -12,8 +12,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div id="contact" className="m-10 w-full xl:self-center">
-      <div className="text-center text-5xl text-colour font-AzeretMonoItalic">Contact</div>
+    <div id="contact" className="m-10 w-full space-y-10">
+      <div className="text-center text-5xl text-colour">Contact</div>
       <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact" />
         <div style={{ display: 'none' }}>

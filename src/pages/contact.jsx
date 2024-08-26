@@ -7,9 +7,9 @@ import ShaderBackground from "../components/ShaderBackground";
 export default function Contact(){
 
     return(
-        <div className="w-screen h-screen flex flex-row-reverse justify-center">
+        <div className="font-Montserrat w-screen h-screen flex flex-row-reverse justify-center">
             <ShaderBackground />
-            <div className="flex overflow-scroll xl:overflow-hidden bg-white p-4 h-full">
+            <div className="flex overflow-y-scroll xl:overflow-hidden bg-white p-4 h-full">
                 <Link className="absolute top-2 left-2" to="/">
                     <FontAwesomeIcon icon={faTimes} size="lg" />
                 </Link>
