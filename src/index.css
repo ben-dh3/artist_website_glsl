@@ -3,7 +3,15 @@
 @import 'tailwindcss/utilities';
 
 .text-colour {
-  color: #9ED98D;
+  color: #006600;
+}
+
+:hover.bg-colour {
+  background-color: #006600;
+}
+
+.border-colour {
+  border-color: #006600;
 }
 
 .font-Montserrat {

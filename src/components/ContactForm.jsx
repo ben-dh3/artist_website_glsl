@@ -12,9 +12,9 @@ const ContactForm = () => {
   };
 
   return (
-    <div id="contact" className="m-10 w-full space-y-10">
-      <div className="text-center text-5xl text-colour">Contact</div>
-      <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+    <div id="contact" className="flex flex-col m-10 w-full space-y-10">
+      <div className="flex self-center text-center text-4xl">Contact</div>
+      <form className='flex flex-col' name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact" />
         <div style={{ display: 'none' }}>
           <label>
@@ -22,7 +22,7 @@ const ContactForm = () => {
           </label>
         </div>
         <div className="mb-6">
-          <label htmlFor="name" className="block text-sm font-medium">Name</label>
+          <label htmlFor="name" className="block text-sm">Name</label>
           <input
             type="text"
             id="name"
@@ -34,7 +34,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="mb-6">
-          <label htmlFor="email" className="block text-sm font-medium">Email</label>
+          <label htmlFor="email" className="block text-sm">Email</label>
           <input
             type="email"
             id="email"
@@ -46,7 +46,7 @@ const ContactForm = () => {
           />
         </div>
         <div>
-          <label htmlFor="message" className="block text-sm font-medium">Message</label>
+          <label htmlFor="message" className="block text-sm">Message</label>
           <textarea
             id="message"
             name="message"
@@ -70,8 +70,8 @@ const ContactForm = () => {
             </label>
           </div>
         </div>
-        <div className="bg-white text-blue-600 border border-blue-600 text-2xl p-2 rounded-3xl mt-10 grid">
-          <button type="submit" aria-label="submit contact form">Send</button>
+        <div className="flex justify-center self-center bg-white bg-colour text-colour hover:text-white border border-colour text-md p-1 mt-10 w-40">
+          <button className='' type="submit" aria-label="submit contact form">Send</button>
         </div>
       </form>
     </div>

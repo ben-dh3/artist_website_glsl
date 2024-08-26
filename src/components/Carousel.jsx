@@ -26,7 +26,7 @@ const Carousel = ({ images }) => {
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((image, index) => (
-            <Link className="cursor-zoom-in flex justify-center self-center w-full flex-shrink-0" key={index} to={image.link}>
+            <Link className="cursor-pointer flex justify-center self-center w-full flex-shrink-0" key={index} to={image.link}>
                 <img
                 src={image.src}
                 alt={image.alt || `Slide ${index + 1}`}

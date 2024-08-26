@@ -27,14 +27,14 @@ export default function ProductPageTemplate({ productId, productComponentId }) {
   }, []);
 
   return (
-    <div className="w-screen h-screen flex flex-row-reverse">
+    <div className="overflow-y-scroll w-screen h-screen flex flex-row-reverse">
       <ShaderBackground />
       <div className="flex bg-white p-4 h-full w-full">
       <Link to="/" className="absolute top-2 left-2">
           <FontAwesomeIcon icon={faTimes} size="lg" />
       </Link>
       <div className='m-10 w-full h-full xl:self-center'>
-        <div id={productComponentId} className="mb-20"></div>   
+        <div id={productComponentId} className=""></div>   
       </div>
       </div>
     </div>
