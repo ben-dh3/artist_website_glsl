@@ -20,7 +20,7 @@ const Carousel = ({ images }) => {
   };
 
   return (
-    <div className="relative w-full h-full overflow-hidden">
+    <div className="title-colour relative w-full h-full overflow-hidden">
       <div
         className="flex transition-transform ease-in-out duration-500"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -37,13 +37,13 @@ const Carousel = ({ images }) => {
       </div>
       <button
         onClick={prevSlide}
-        className="text-4xl absolute top-1/2 left-4 transform -translate-y-1/2 text-colour"
+        className="text-2xl absolute top-1/2 left-4 transform -translate-y-1/2"
       >
         <FontAwesomeIcon icon={faArrowLeft} />
       </button>
       <button
         onClick={nextSlide}
-        className="text-4xl absolute top-1/2 right-4 transform -translate-y-1/2 text-colour"
+        className="text-2xl absolute top-1/2 right-4 transform -translate-y-1/2"
       >
         <FontAwesomeIcon icon={faArrowRight} />
       </button>

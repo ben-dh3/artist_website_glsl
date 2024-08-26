@@ -2,16 +2,24 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+.title-colour{
+  color: #474747
+}
+
 .text-colour {
-  color: #006600;
+  color: #006551
+}
+
+.highlight-colour {
+  color: #00c896
 }
 
 :hover.bg-colour {
-  background-color: #006600;
+  background-color: #006551;
 }
 
 .border-colour {
-  border-color: #006600;
+  border-color: #006551;
 }
 
 .font-Montserrat {

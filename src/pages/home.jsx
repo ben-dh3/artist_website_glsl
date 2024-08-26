@@ -19,7 +19,7 @@ function Home() {
             <Gallery /> 
           </div>
           <div className="flex-1 flex">
-            <div className="text-2xl self-center space-x-5">
+            <div className="title-colour text-2xl self-center space-x-5">
                 <a href="https://www.instagram.com/__artbyben/" target='_blank' aria-label="Instagram Link">
                 <FontAwesomeIcon icon={faInstagram} />
                 </a>

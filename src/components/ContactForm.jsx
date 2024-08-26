@@ -12,7 +12,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div id="contact" className="flex flex-col m-10 w-full space-y-10">
+    <div id="contact" className="title-colour flex flex-col m-10 w-full space-y-10">
       <div className="flex self-center text-center text-4xl">Contact</div>
       <form className='flex flex-col' name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact" />
