@@ -8,7 +8,6 @@ import vertexShader from "../assets/shaders/vertexShader.glsl";
 import fragmentShader from "../assets/shaders/fragmentShader.glsl";
 
 const Fragment = () => {
-  // This reference will give us direct access to the mesh
   const mesh = useRef();
   const mousePosition = useRef({ x: 0, y: 0 });
 

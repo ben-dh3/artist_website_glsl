@@ -30,7 +30,6 @@ float random(vec2 st)
 // Get noise
 float noise(vec2 st)
 {
-    // Splited integer and float values.
     vec2 i = floor(st);
     vec2 f = fract(st);
     
@@ -39,7 +38,6 @@ float noise(vec2 st)
     float c = random(i + vec2(0.0, 1.0));
     float d = random(i + vec2(1.0, 1.0));
     
-    // -2.0f^3 + 3.0f^2
     vec2 u = f * f * (3.0 - 2.0 * f);
     
     return mix(a, b, u.x) + (c - a) * u.y * (1.0 - u.x) + (d - b) * u.x * u.y;
@@ -47,7 +45,6 @@ float noise(vec2 st)
 
 // Fractal Brownian Motion
 //
-// Reduce amplitude multiplied by 0.5, and frequency multiplied by 2.
 float fbm(vec2 st)
 {
 	float v = 0.0;
