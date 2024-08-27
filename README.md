@@ -21,10 +21,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="/assets/search-screen.webp" alt="Logo" height="400"><img src="/assets/detail-screen.webp" alt="Logo" height="400">
+<img src="/public/hero.webp" alt="Logo" height="300"><img src="/public/product.webp" alt="Logo" height="300"><img src="/public/contact.webp" alt="Logo" height="300">
 
 
-* Art & Design showcase utilising Shopify Integration, exploring graphic design principles - colour theory, layout design and typography. The App is deployed and available via the globe icon below.
+* Art & Design showcase utilising Shopify Integration, exploring graphic design principles - colour theory, layout design and typography.
 
 * I have created the background graphics with GLSL shaders and React Three Fibre. The effect is created with a Fractal Brownian Motion function, and uses a mouse movement event listener to interact with the colours.
 
@@ -36,9 +36,10 @@
 
 ### Built With
 
-* React Native
+* React Three Fibre
+* GLSL
 * Adobe Creative Suite
-* Expo
+* Javascript
 * Tailwind
 * Figma
 
