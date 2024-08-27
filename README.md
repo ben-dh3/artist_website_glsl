@@ -1,8 +1,54 @@
-# React + Vite
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://bdhartanddesign.netlify.app/">
+    <img src="/public/title.webp" alt="Logo" height="100">
+  </a>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h3 align="center">Shopify Ecommerce Store</h3>
 
-Currently, two official plugins are available:
+  <p align="center">
+    Art and design showcase created using React Three Fibre and GLSL with Shopify integration.
+    <br />
+    <a href="https://bdhartanddesign.netlify.app/">Link to website</a>
+    <br />
+    <a href="https://bendhportfolio.netlify.app/bdhartanddesign">Portfolio Project Entry</a>
+  </p>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+<img src="/assets/search-screen.webp" alt="Logo" height="400"><img src="/assets/detail-screen.webp" alt="Logo" height="400">
+
+
+* Art & Design showcase utilising Shopify Integration, exploring graphic design principles - colour theory, layout design and typography. The App is deployed and available via the globe icon below.
+
+* I have created the background graphics with GLSL shaders and React Three Fibre. The effect is created with a Fractal Brownian Motion function, and uses a mouse movement event listener to interact with the colours.
+
+* Deployed using Netlify, I have integrated Netlify forms to collect customer queries. I have used the Shopify Buy Button to enable sales through my site, and a carousel feature to easily view my work. 
+
+* The website is fully responsive and styled with Tailwind, taking modern UX design trends into account.
+
+
+
+### Built With
+
+* React Native
+* Adobe Creative Suite
+* Expo
+* Tailwind
+* Figma
+
+---
+
+<!-- CONTACT -->
+## Contact
+
+Benjamin Duffield-Harding - benjaminduffield1997@gmail.com
+
+[LinkedIn](https://www.linkedin.com/in/benjamin-duffield-harding-051011254/)
+
+[Github Link](https://github.com/ben-dh3)
